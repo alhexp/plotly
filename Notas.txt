@@ -1,0 +1,49 @@
+update masivo en sap hana
+el usuario gestor de sistema realiza la configuracion del sistema
+el administrador administra el sistema en general
+rol de usuario call center es diferente del rol de ejecutivo de cobranzas
+call center tiene menos opciones que el ejecutivo de cobranzas
+ solo puede ver los clientes a los que tiene que llamar y/o notificar
+ existe un filtro para mostrar los clientes al call center
+  filtrar por tipo de cartera
+  algoritmo para mostrar clientes al call center
+  estos filtros son parametrizables
+  el sistema debe avisar al ejecutivo de cartera sobre los clientes que se 
+   encuentran asignados al call center
+  verificar que el numero de celular siga siendo valido?
+puede sap hana ejecutar procedimientos almacenados programados
+el ejecutivo de cartera tiene baja por vacaciones, desvinculacion
+el ejecutivo nuevo podria heredar la cartera de un ejecutivo que se esta desvinculando
+usuario reemplazo en la tabla nueva para el ejecutivo de cartera
+asignacion temporal de cartera???
+asignar toda la cartera de un ejecutivo a otro ejecutivo
+la cartera nace con la firma del contrato, pero no se asigna un cobrador
+los nuevos clientes se asignan al ejecutivo de cartera que tenga menos clientes
+
+
+al publicar configurar el archivo 
+	environment
+	angular.json
+		borrar budgets
+	browser
+		borrar extension de safari
+	app.module.ts
+		providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true},
+    { provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
+
+ejecutar para produccion
+npm install autoprefixer@10.4.5 --save-exact
+
+compilar para produccion
+ng build --prod
+ng build --base-href "/toh/" --prod
+ng build --base-href / --prod --deploy-url /public
+ng build --prod --base-href subfolder
+
+preview
+ng serve --prod
+
+server19
+M@pa1so2023
