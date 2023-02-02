@@ -1,0 +1,6 @@
+theme: minima
+
+title: MyOwnPage
+description: An easy to use blogging platform with support for Jupyter Notebooks.
+github_username: alhexp
+github_repo: "plotly-githubpages.github.io"
