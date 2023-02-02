@@ -29,10 +29,67 @@ url: "https://plotly-jekyll.github.io" # the base hostname & protocol for your s
 #twitter_username: jekyllrb
 github_username:  alhexp
 
+##########################################################################
 # Build settings
-theme: minima
+#theme: minima
+# remote_theme: THEME-NAME
 plugins:
   - jekyll-feed
+ 
+# Set this to true to get LaTeX math equation support
+use_math: 
+
+# Set this to true to display the summary of your blog post under your title on the Home page.
+show_description: true
+
+# Set this to true to display image previews on home page, if they exist
+show_image: false
+
+# Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
+annotations: false
+
+# Set this to true to display tags on each post
+show_tags: true
+
+# Add your Google Analytics ID here if you have one and want to use it
+#google_analytics: UA-57531313-5
+
+# this setting allows you to keep pages organized in the _pages folder
+include:
+  - _pages
+
+# This specifies what badges are turned on by default for notebook posts.
+default_badges:
+  github: true
+  binder: true
+  colab: true
+  deepnote: true
+
+# Escape HTML in post descriptions
+html_escape:
+  description: false
+  
+remote_theme: jekyll/minima
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# to limit size of xml as it can grow quite large.
+feed:
+  posts_limit: 5 #default posts_limit: 10
+  excerpt_only: true 
+########################################################
 
 # Exclude from processing.
 # The following items will not be processed, by default.
